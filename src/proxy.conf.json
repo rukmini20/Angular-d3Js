@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://100.67.30.48:8080/v1/idracs/metrics",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

@@ -1,0 +1,105 @@
+.js-plotly-plot .plotly .ease-bg {
+    display: none!important;
+}
+.card-stats .card-body .numbers p {
+    font-size: 15px;
+}
+.js-plotly-plot .plotly .modebar {
+    display: none;
+}
+.js-plotly-plot .plotly .ease-bg {
+    display: none;
+}
+
+.js-plotly-plot .plotly .modebar {
+    display: none;
+}
+
+.js-plotly-plot .plotly:hover #modebar-c009f0 .modebar-group {
+    display: none !important;
+}
+#modebar-a19fe8{
+display: none;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 50%;
+  }
+  @media (min-width: 992px){
+  .col-lg-3 {
+      flex: 1 0 25% !important;
+      max-width: 61% !important;
+  }
+}
+a{
+        margin-left: 8%;
+}
+button{
+    font-size: 11px;
+    padding: 7px;
+    border-radius: 32px;
+}
+#btn{
+    margin-top: 3%;
+}
+.modebar{
+    display: none !important;
+}
+.modebar.plotly:hover{
+    display: none !important;
+}
+#datalistOptions1{
+    font-size: 13px;
+    padding: 9px;
+    border-radius: 3px;
+    border: 1px solid grey;
+    margin-top: 25px;}
+    #datalistOptions2{
+        font-size: 13px;
+        padding: 9px;
+        border-radius: 3px;
+        border: 1px solid grey;
+        margin-left: -62px;
+        margin-top: 25px;}
+        #datalistOptions3{
+            font-size: 13px;
+            padding: 9px;
+            border-radius: 3px;
+            border: 1px solid grey;
+            margin-left: -127px;
+            margin-top: 25px;}
+            #datalistOptions4{
+                margin-top: 25px;}
+    .card-stats .icon-big {
+        font-size: 2em;
+    }
+    .card-stats .icon-big i {
+        line-height: 0px;
+    }
+    #dp1{
+        width: 70%;
+        margin-right: 20%;
+    }
+    #dp2{
+        width: 80%;
+        margin-left: -30%;
+    }
+    #dp3{
+        width: 130%;
+        margin-left: -50%;
+        text-align: left;
+    }
+    .strt{
+        width: 20%;
+        
+    }
+    span.a {
+        display: inline-block;
+        padding: 15px;
+        margin-left: 5%;
+    }

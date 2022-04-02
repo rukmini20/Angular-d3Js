@@ -1,0 +1,129 @@
+<div class="row">
+  <div class="col-lg-3 col-md-6 col-sm-12">
+    <div class="card card-stats" id="dp1">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="nc-icon nc-chart-bar-32" style="color: #007db8;"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Idrac List</p>
+              <select id="datalistOptions1" [(ngModel)]="selectedLevel" (ngModelChange)="onOptionsSelected()">
+                <option value="undefined" selected disabled>Select Idrac</option>
+                <option *ngFor="let opt of idrac.idrac" [ngValue]="opt">
+                  {{opt}}
+                </option>
+              </select>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+       
+        <div class="stats">
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-stats" id="dp2">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="nc-icon nc-tile-56" style="color: #007db8;"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Metrics</p>
+              <select id="datalistOptions2" (change)="changeMetric($event.target.value)">
+                <option selected disabled>Select Metric</option>
+                <option *ngFor="let ds of metric.measurements" [ngValue]="ds.metrics">
+                  {{ds.metrics}}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">
+       
+        <div class="stats">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-6 col-sm-6">
+    <div class="card card-stats" id="dp3">
+      <div class="card-body ">
+        <div class="row">
+          <div class="col-5 col-md-4">
+            <div class="icon-big text-center icon-warning">
+              <i class="nc-icon nc-bullet-list-67" style="color: #007db8;"></i>
+            </div>
+          </div>
+          <div class="col-7 col-md-8">
+            <div class="numbers">
+              <p class="card-category">Measurement</p>
+              <select id="datalistOptions3" [(ngModel)]="selectedMetric" (ngModelChange)="onOptionsSelectedMeasurement()">
+                <option *ngFor="let ds of measurement" [ngValue]="ds">
+                  {{ds}}
+                </option>
+              </select>
+              <!-- <ejs-multiselect
+              [dataSource]='measurement'
+              [allowFiltering]='true'
+              mode="Box"
+              cssClass="e-outline"
+              [(ngModel)]="selectedMetric"
+              (ngModelChange)="onOptionsSelectedMeasurement()"
+              (select)="changeMeasuremnet($event.itemData)"
+              placeholder='Select Metrics'
+            ></ejs-multiselect> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer ">      
+       
+        <div class="stats">
+         
+        </div>
+      </div>
+    </div>
+  </div>
+ <div></div></div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header ">
+        <div>
+          <!-- <span class="a"><ejs-datetimepicker formControlName="dateTime" placeholder="Start Date & Time" cssClass="e-outline" floatLabelType="Auto">
+          </ejs-datetimepicker></span>
+          <span class="a"> <ejs-datetimepicker formControlName="dateTime" placeholder="End Date & Time" cssClass="e-outline" floatLabelType="Auto"></ejs-datetimepicker>
+          </span> -->
+          <span class="a"><h6>Select Date:</h6></span>
+          <span class="a"> 
+            <ejs-daterangepicker id='daterangepicker' placeholder='Select a range' [startDate]='start' [endDate]='end' (change)="getDater($event.value)"></ejs-daterangepicker>
+          </span>
+          </div>
+        <h5 class="card-title">{{selectedMetric}} {{selectedLevel}}</h5>
+      </div>
+      <div class="card-body ">
+       
+        <div id='bar'></div>
+
+      </div>
+     </div>
+  </div>
+</div>
+
+

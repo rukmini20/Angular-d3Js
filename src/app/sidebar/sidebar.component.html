@@ -1,0 +1,19 @@
+
+<div class="sidebar-wrapper">
+  <div class="logo">
+    <a href="#" class="simple-text logo-mini" style="width: 114px;margin-left: 20%;">
+      <div class="logo-image-small" >
+        <img src="http://100.67.30.48:8000/download.png">
+      </div>
+    </a>
+    <h4 style="margin-top: 40%;"> Dell Dashboard</h4>
+  </div>
+    <ul class="nav">
+        <li *ngFor="let menuItem of menuItems" routerLinkActive="active" class="{{menuItem.class}}">
+            <a [routerLink]="[menuItem.path]">
+                <i class="nc-icon {{menuItem.icon}}"></i>
+                <p>{{menuItem.title}}</p>
+            </a>
+        </li>
+    </ul>
+</div>

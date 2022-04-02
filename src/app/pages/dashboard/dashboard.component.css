@@ -1,0 +1,41 @@
+.js-plotly-plot .plotly .ease-bg {
+    display: none!important;
+}
+.card-stats .card-body .numbers p {
+    font-size: 15px;
+}
+.js-plotly-plot .plotly .modebar {
+    display: none;
+}
+.js-plotly-plot .plotly .ease-bg {
+    display: none;
+}
+
+.js-plotly-plot .plotly .modebar {
+    display: none;
+}
+
+.js-plotly-plot .plotly:hover #modebar-c009f0 .modebar-group {
+    display: none !important;
+}
+#modebar-a19fe8{
+display: none;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 50%;
+  }
+  @media (min-width: 992px){
+  .col-lg-3 {
+      flex: 1 0 25% !important;
+      max-width: 61% !important;
+  }
+}
+a{
+        margin-left: 8%;
+}
